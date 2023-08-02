@@ -1,0 +1,109 @@
+[
+    {
+      "id": 1,
+      "nameApplicant": "PT JADI BERKAT MULYA",
+      "code": "SME-53089",
+      "type": "Increase Application",
+      "status": "CDU PROCESS",
+      "resolution": "Unresolve",
+      "securityLevel": "Private",
+      "details": {
+        "clientInformation": {
+          "customer": "PT JADI BERKAT MULYA",
+          "CIFCustomer": "00345129",
+          "PICName": "Joko Saputra",
+          "PICPhoneNumber": "081357575777",
+          "customerType": "PT",
+          "area": "SBY 1B",
+          "SMERegion": "SME Region 3",
+          "SMERMBranch": "217 - Surabaya",
+          "RMBICode": "00316363",
+          "salesProgramCode": "Non-Program",
+          "dijaminPenuhAgunanTunai": "No",
+          "counterInterestRate": 12.25,
+          "sectorIndustry": "Wholesale and Retail Trade",
+          "facility1Type": "PRK",
+          "facility1ExistingCashLoanLimit": 6500000000,
+          "facility1IncreaseOrDecreaseCashLoanLimit": 1500000000,
+          "facilty1ExistingNonCashLoanLimit": 0,
+          "facility1IncreaseOrDecreaseNonCashLoanLimit": 0,
+          "facility1Currency": "IDR",
+          "facility1ConversionRate": 1,
+          "totalFacility1ExistingCashLoanAmount": 6500000000,
+          "totalFacility1IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility1ExistingNonCashLoanAmount": 0,
+          "totalFacilty1IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility2ConversionRate": 1,
+          "totalFacility2ExistingCashLoanAmount": 6500000000,
+          "totalFacility2IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility2ExistingNonCashLoanAmount": 0,
+          "totalFacilty2IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility3ConversionRate": 1,
+          "totalFacility3ExistingCashLoanAmount": 6500000000,
+          "totalFacility3IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility3ExistingNonCashLoanAmount": 0,
+          "totalFacilty3IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility4ConversionRate": 1,
+          "totalFacility4ExistingCashLoanAmount": 6500000000,
+          "totalFacility4IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility4ExistingNonCashLoanAmount": 0,
+          "totalFacilty4IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility5ConversionRate": 1,
+          "totalFacility5ExistingCashLoanAmount": 6500000000,
+          "totalFacility5IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility5ExistingNonCashLoanAmount": 0,
+          "totalFacilty5IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility6ConversionRate": 1,
+          "totalFacility6ExistingCashLoanAmount": 6500000000,
+          "totalFacility6IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility6ExistingNonCashLoanAmount": 0,
+          "totalFacilty6IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility7ConversionRate": 1,
+          "totalFacility7ExistingCashLoanAmount": 6500000000,
+          "totalFacility7IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility7ExistingNonCashLoanAmount": 0,
+          "totalFacilty7IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility8ConversionRate": 1,
+          "totalFacility8ExistingCashLoanAmount": 6500000000,
+          "totalFacility8IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility8ExistingNonCashLoanAmount": 0,
+          "totalFacilty8IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility9ConversionRate": 1,
+          "totalFacility9ExistingCashLoanAmount": 6500000000,
+          "totalFacility9IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility9ExistingNonCashLoanAmount": 0,
+          "totalFacilty9IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility10ConversionRate": 1,
+          "totalFacility10ExistingCashLoanAmount": 6500000000,
+          "totalFacility10IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility10ExistingNonCashLoanAmount": 0,
+          "totalFacilty10IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "RMTotalExistingCashLoanAmount": 6500000000,
+          "RMTotalIncreaseDecreaseCashLoanAmount": 150000000,
+          "RMTotalExistingNonCashLoanAmount": 0,
+          "RMTotalIncreaseDecreaseNonCashLoanAmount": 0,
+          "RMTotalLimitCashLoanAmount": 0
+        }
+      },
+      "attachments": {
+        "identitasDebitur": [
+          {
+            "nama": "a.pdf",
+            "url": "urlaaaaaaaa.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "b.pdf",
+            "url": "urlaaaaaaaa.pdf",
+            "tanggal": "280301"
+          }
+        ]
+      },
+      "comments": [
+        {
+          "nama": "antonio",
+          "comment": "Good"
+        }
+      ]
+    }
+  ]
