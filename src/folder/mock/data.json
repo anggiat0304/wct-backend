@@ -83,18 +83,402 @@
           "RMTotalExistingNonCashLoanAmount": 0,
           "RMTotalIncreaseDecreaseNonCashLoanAmount": 0,
           "RMTotalLimitCashLoanAmount": 0
+        },
+
+        "documentList" :{
+          "dataDebiturPerorangan":[
+            {
+              "nama":"Fotokopi KTP/Paspor Debitur",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi KTP/Paspor pasangan (suami istri)",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi Akta Nikah",
+              "check":false
+            }
+          ],
+          "dataDebiturPerushaan":[
+            {
+              "nama":"Fotokopi KTP/KITAS/Pssport Pemegang Saham",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Direksi",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Komisaris",
+              "check":false
+            }
+          ]
+        },
+        "preScreen":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Pre-Screen Checklist",
+              "check":false
+            }
+          ]
+        },
+        "apprasial":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Proof of payment",
+              "check":false
+            },
+            {
+              "nama":"Proof of certificate",
+              "check":false
+            }
+          ]
+        },
+        "RM":{
+          "reworkFromDUWToRM": 1,
+          "reworkFromLSS":1,
+          "reworkReasonIndividualAndInformationFromDUWtoRM":"#COLLNA_MOHON Melampirkan LPA Lengkap.\n#BUSSMNA_Mohon dilengkapi:\n- stample PT pada SME Aplikasi dan Lap Keuangan"
+        },
+        "DUW":{
+          "codeId":"COE-1457225",
+          "systemDecision":"refer",
+          "DUWWorksheet":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
+        },
+        "CA":{
+          "CA1Recomendation":"Approve",
+          "CA1RecomendationCashLoanAmountExisting":650000000,
+          "CA1RecomendationCashLoanAmountLimit":14000000000,
+          "CA1RecomendationCashLoanAmount":790000000
+        },
+        "DA":{
+          "DADecision":"Approve",
+          "DAApprovedCashLoanAmountExisting":650000000,
+          "DAApprovedCashLoanAmountLimit":14000000000,
+          "DAApprovedCashLoanAmount":790000000
+        },
+        "SULCompletion":{
+          "signInCashLoanAmount":790000000,
+          "signInNonCashLoanAmount":0,
+          "documentPost":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
         }
       },
       "attachments": {
         "identitasDebitur": [
           {
-            "nama": "a.pdf",
-            "url": "urlaaaaaaaa.pdf",
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
             "tanggal": "280301"
           },
           {
-            "nama": "b.pdf",
-            "url": "urlaaaaaaaa.pdf",
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "identitasUsaha":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "loanReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apprasialReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankStatement":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "BICCheckingResult":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "collateralDocument":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "laporanKeungan":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "DUWWorksheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "CAWorkSheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "offeringLetter":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "notaris":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "internalMemo":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "TBO":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "perjanjianKredit":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "skmht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sbdk":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "lll":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "akta":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "others":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "tandaTerima":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankGurantee":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sul":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
             "tanggal": "280301"
           }
         ]
@@ -102,8 +486,1640 @@
       "comments": [
         {
           "nama": "antonio",
-          "comment": "Good"
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Hartini, Selvi Indah",
+          "comment":"Debit Fees Increase OD Done",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama": "Sudarsono, Nanang",
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Dewi Eunike Kusuma",
+          "comment":"Increase Done",
+          "date":"30/Aug/18 3:28 PM"
         }
-      ]
+      ],
+      "people":{
+        "assigne": "Junaidi, Sharleen Christie",
+        "reporter": "Junaidi, Sharleen Christie",
+        "assignToBM":"Andriani, Yunny",
+        "assignToRM":"Junaidi, Sharleen Christie",
+        "assignToLSSPreScreen":"Julianto, Raden Yusuf",
+        "assigneToDLDUW":"Hagijo, Edi",
+        "assignToDUW":"NurhasanTaufan",
+        "DUWReviewerName":"Hagijo, Edi",
+        "assignToTLCA":"Nugroho, FX Tomy",
+        "assignToCA1":"Andry, Andry",
+        "assignToCA2":"Nugroho, FX Tomy",
+        "assignToBMorDA":"Andriani, Yunny",
+        "assignToTLLSS":"Christianne, Grace"
+      },
+      "dates":{
+        "created":"06/Aug/18 2:53 PM",
+        "updated":"23/Oct/19 9:07 AM",
+        "singInDate" :"30/Aug/18",
+        "disbursementDate":"30/Aug/18",
+        "dueDateCovernoteDate":"30/Nov/18",
+        "LSSReceiveDateForCovernoteNotaris":"31/Aug/18",
+        "CDUReceiveDateForCovernoteNotaris":"31/Aug/18"
+      }
+    },
+    {
+      "id": 2,
+      "nameApplicant": "Berkat Anugerah Jaya Raya PT",
+      "code": "SME-40929",
+      "type": "Increase Application",
+      "status": "CDU PROCESS",
+      "resolution": "Unresolve",
+      "securityLevel": "Private",
+      "details": {
+        "clientInformation": {
+          "customer": "PT JADI BERKAT MULYA",
+          "CIFCustomer": "00345129",
+          "PICName": "Joko Saputra",
+          "PICPhoneNumber": "081357575777",
+          "customerType": "PT",
+          "area": "SBY 1B",
+          "SMERegion": "SME Region 3",
+          "SMERMBranch": "217 - Surabaya",
+          "RMBICode": "00316363",
+          "salesProgramCode": "Non-Program",
+          "dijaminPenuhAgunanTunai": "No",
+          "counterInterestRate": 12.25,
+          "sectorIndustry": "Wholesale and Retail Trade",
+          "facility1Type": "PRK",
+          "facility1ExistingCashLoanLimit": 6500000000,
+          "facility1IncreaseOrDecreaseCashLoanLimit": 1500000000,
+          "facilty1ExistingNonCashLoanLimit": 0,
+          "facility1IncreaseOrDecreaseNonCashLoanLimit": 0,
+          "facility1Currency": "IDR",
+          "facility1ConversionRate": 1,
+          "totalFacility1ExistingCashLoanAmount": 6500000000,
+          "totalFacility1IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility1ExistingNonCashLoanAmount": 0,
+          "totalFacilty1IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility2ConversionRate": 1,
+          "totalFacility2ExistingCashLoanAmount": 6500000000,
+          "totalFacility2IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility2ExistingNonCashLoanAmount": 0,
+          "totalFacilty2IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility3ConversionRate": 1,
+          "totalFacility3ExistingCashLoanAmount": 6500000000,
+          "totalFacility3IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility3ExistingNonCashLoanAmount": 0,
+          "totalFacilty3IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility4ConversionRate": 1,
+          "totalFacility4ExistingCashLoanAmount": 6500000000,
+          "totalFacility4IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility4ExistingNonCashLoanAmount": 0,
+          "totalFacilty4IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility5ConversionRate": 1,
+          "totalFacility5ExistingCashLoanAmount": 6500000000,
+          "totalFacility5IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility5ExistingNonCashLoanAmount": 0,
+          "totalFacilty5IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility6ConversionRate": 1,
+          "totalFacility6ExistingCashLoanAmount": 6500000000,
+          "totalFacility6IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility6ExistingNonCashLoanAmount": 0,
+          "totalFacilty6IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility7ConversionRate": 1,
+          "totalFacility7ExistingCashLoanAmount": 6500000000,
+          "totalFacility7IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility7ExistingNonCashLoanAmount": 0,
+          "totalFacilty7IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility8ConversionRate": 1,
+          "totalFacility8ExistingCashLoanAmount": 6500000000,
+          "totalFacility8IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility8ExistingNonCashLoanAmount": 0,
+          "totalFacilty8IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility9ConversionRate": 1,
+          "totalFacility9ExistingCashLoanAmount": 6500000000,
+          "totalFacility9IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility9ExistingNonCashLoanAmount": 0,
+          "totalFacilty9IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility10ConversionRate": 1,
+          "totalFacility10ExistingCashLoanAmount": 6500000000,
+          "totalFacility10IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility10ExistingNonCashLoanAmount": 0,
+          "totalFacilty10IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "RMTotalExistingCashLoanAmount": 6500000000,
+          "RMTotalIncreaseDecreaseCashLoanAmount": 150000000,
+          "RMTotalExistingNonCashLoanAmount": 0,
+          "RMTotalIncreaseDecreaseNonCashLoanAmount": 0,
+          "RMTotalLimitCashLoanAmount": 0
+        },
+        
+        "documentList" :{
+          "dataDebiturPerorangan":[
+            {
+              "nama":"Fotokopi KTP/Paspor Debitur",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi KTP/Paspor pasangan (suami istri)",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi Akta Nikah",
+              "check":false
+            }
+          ],
+          "dataDebiturPerushaan":[
+            {
+              "nama":"Fotokopi KTP/KITAS/Pssport Pemegang Saham",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Direksi",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Komisaris",
+              "check":false
+            }
+          ]
+        },
+        "preScreen":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Pre-Screen Checklist",
+              "check":false
+            }
+          ]
+        },
+        "apprasial":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Proof of payment",
+              "check":false
+            },
+            {
+              "nama":"Proof of certificate",
+              "check":false
+            }
+          ]
+        },
+        "RM":{
+          "reworkFromDUWToRM": 1,
+          "reworkFromLSS":1,
+          "reworkReasonIndividualAndInformationFromDUWtoRM":"#COLLNA_MOHON Melampirkan LPA Lengkap.\n#BUSSMNA_Mohon dilengkapi:\n- stample PT pada SME Aplikasi dan Lap Keuangan"
+        },
+        "DUW":{
+          "codeId":"COE-1457225",
+          "systemDecision":"refer",
+          "DUWWorksheet":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
+        },
+        "CA":{
+          "CA1Recomendation":"Approve",
+          "CA1RecomendationCashLoanAmountExisting":650000000,
+          "CA1RecomendationCashLoanAmountLimit":14000000000,
+          "CA1RecomendationCashLoanAmount":790000000
+        },
+        "DA":{
+          "DADecision":"Approve",
+          "DAApprovedCashLoanAmountExisting":650000000,
+          "DAApprovedCashLoanAmountLimit":14000000000,
+          "DAApprovedCashLoanAmount":790000000
+        },
+        "SULCompletion":{
+          "signInCashLoanAmount":790000000,
+          "signInNonCashLoanAmount":0,
+          "documentPost":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
+        }
+      },
+      "attachments": {
+        "identitasDebitur": [
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "identitasUsaha":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "loanReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apprasialReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankStatement":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "BICCheckingResult":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "collateralDocument":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "laporanKeungan":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "DUWWorksheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "CAWorkSheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "offeringLetter":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "notaris":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "internalMemo":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "TBO":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "perjanjianKredit":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "skmht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sbdk":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "lll":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "akta":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "others":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "tandaTerima":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankGurantee":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sul":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ]
+      },
+      "comments": [
+        {
+          "nama": "antonio",
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Hartini, Selvi Indah",
+          "comment":"Debit Fees Increase OD Done",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama": "Sudarsono, Nanang",
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Dewi Eunike Kusuma",
+          "comment":"Increase Done",
+          "date":"30/Aug/18 3:28 PM"
+        }
+      ],
+      "people":{
+        "assigne": "Junaidi, Sharleen Christie",
+        "reporter": "Junaidi, Sharleen Christie",
+        "assignToBM":"Andriani, Yunny",
+        "assignToRM":"Junaidi, Sharleen Christie",
+        "assignToLSSPreScreen":"Julianto, Raden Yusuf",
+        "assigneToDLDUW":"Hagijo, Edi",
+        "assignToDUW":"NurhasanTaufan",
+        "DUWReviewerName":"Hagijo, Edi",
+        "assignToTLCA":"Nugroho, FX Tomy",
+        "assignToCA1":"Andry, Andry",
+        "assignToCA2":"Nugroho, FX Tomy",
+        "assignToBMorDA":"Andriani, Yunny",
+        "assignToTLLSS":"Christianne, Grace"
+      },
+      "dates":{
+        "created":"06/Aug/18 2:53 PM",
+        "updated":"23/Oct/19 9:07 AM",
+        "singInDate" :"30/Aug/18",
+        "disbursementDate":"30/Aug/18",
+        "dueDateCovernoteDate":"30/Nov/18",
+        "LSSReceiveDateForCovernoteNotaris":"31/Aug/18",
+        "CDUReceiveDateForCovernoteNotaris":"31/Aug/18"
+      }
+    },
+    {
+      "id": 3,
+      "nameApplicant": "PT Pelayaran Berkat Abadi Jaya Makmur",
+      "code": "SME-17000",
+      "type": "Increase Application",
+      "status": "CDU PROCESS",
+      "resolution": "Unresolve",
+      "securityLevel": "Private",
+      "details": {
+        "clientInformation": {
+          "customer": "PT JADI BERKAT MULYA",
+          "CIFCustomer": "00345129",
+          "PICName": "Joko Saputra",
+          "PICPhoneNumber": "081357575777",
+          "customerType": "PT",
+          "area": "SBY 1B",
+          "SMERegion": "SME Region 3",
+          "SMERMBranch": "217 - Surabaya",
+          "RMBICode": "00316363",
+          "salesProgramCode": "Non-Program",
+          "dijaminPenuhAgunanTunai": "No",
+          "counterInterestRate": 12.25,
+          "sectorIndustry": "Wholesale and Retail Trade",
+          "facility1Type": "PRK",
+          "facility1ExistingCashLoanLimit": 6500000000,
+          "facility1IncreaseOrDecreaseCashLoanLimit": 1500000000,
+          "facilty1ExistingNonCashLoanLimit": 0,
+          "facility1IncreaseOrDecreaseNonCashLoanLimit": 0,
+          "facility1Currency": "IDR",
+          "facility1ConversionRate": 1,
+          "totalFacility1ExistingCashLoanAmount": 6500000000,
+          "totalFacility1IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility1ExistingNonCashLoanAmount": 0,
+          "totalFacilty1IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility2ConversionRate": 1,
+          "totalFacility2ExistingCashLoanAmount": 6500000000,
+          "totalFacility2IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility2ExistingNonCashLoanAmount": 0,
+          "totalFacilty2IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility3ConversionRate": 1,
+          "totalFacility3ExistingCashLoanAmount": 6500000000,
+          "totalFacility3IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility3ExistingNonCashLoanAmount": 0,
+          "totalFacilty3IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility4ConversionRate": 1,
+          "totalFacility4ExistingCashLoanAmount": 6500000000,
+          "totalFacility4IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility4ExistingNonCashLoanAmount": 0,
+          "totalFacilty4IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility5ConversionRate": 1,
+          "totalFacility5ExistingCashLoanAmount": 6500000000,
+          "totalFacility5IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility5ExistingNonCashLoanAmount": 0,
+          "totalFacilty5IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility6ConversionRate": 1,
+          "totalFacility6ExistingCashLoanAmount": 6500000000,
+          "totalFacility6IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility6ExistingNonCashLoanAmount": 0,
+          "totalFacilty6IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility7ConversionRate": 1,
+          "totalFacility7ExistingCashLoanAmount": 6500000000,
+          "totalFacility7IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility7ExistingNonCashLoanAmount": 0,
+          "totalFacilty7IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility8ConversionRate": 1,
+          "totalFacility8ExistingCashLoanAmount": 6500000000,
+          "totalFacility8IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility8ExistingNonCashLoanAmount": 0,
+          "totalFacilty8IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility9ConversionRate": 1,
+          "totalFacility9ExistingCashLoanAmount": 6500000000,
+          "totalFacility9IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility9ExistingNonCashLoanAmount": 0,
+          "totalFacilty9IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility10ConversionRate": 1,
+          "totalFacility10ExistingCashLoanAmount": 6500000000,
+          "totalFacility10IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility10ExistingNonCashLoanAmount": 0,
+          "totalFacilty10IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "RMTotalExistingCashLoanAmount": 6500000000,
+          "RMTotalIncreaseDecreaseCashLoanAmount": 150000000,
+          "RMTotalExistingNonCashLoanAmount": 0,
+          "RMTotalIncreaseDecreaseNonCashLoanAmount": 0,
+          "RMTotalLimitCashLoanAmount": 0
+        },
+        "documentList" :{
+          "dataDebiturPerorangan":[
+            {
+              "nama":"Fotokopi KTP/Paspor Debitur",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi KTP/Paspor pasangan (suami istri)",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi Akta Nikah",
+              "check":false
+            }
+          ],
+          "dataDebiturPerushaan":[
+            {
+              "nama":"Fotokopi KTP/KITAS/Pssport Pemegang Saham",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Direksi",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Komisaris",
+              "check":false
+            }
+          ]
+        },
+        "preScreen":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Pre-Screen Checklist",
+              "check":false
+            }
+          ]
+        },
+        "apprasial":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Proof of payment",
+              "check":false
+            },
+            {
+              "nama":"Proof of certificate",
+              "check":false
+            }
+          ]
+        },
+        "RM":{
+          "reworkFromDUWToRM": 1,
+          "reworkFromLSS":1,
+          "reworkReasonIndividualAndInformationFromDUWtoRM":"#COLLNA_MOHON Melampirkan LPA Lengkap.\n#BUSSMNA_Mohon dilengkapi:\n- stample PT pada SME Aplikasi dan Lap Keuangan"
+        },
+        "DUW":{
+          "codeId":"COE-1457225",
+          "systemDecision":"refer",
+          "DUWWorksheet":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
+        },
+        "CA":{
+          "CA1Recomendation":"Approve",
+          "CA1RecomendationCashLoanAmountExisting":650000000,
+          "CA1RecomendationCashLoanAmountLimit":14000000000,
+          "CA1RecomendationCashLoanAmount":790000000
+        },
+        "DA":{
+          "DADecision":"Approve",
+          "DAApprovedCashLoanAmountExisting":650000000,
+          "DAApprovedCashLoanAmountLimit":14000000000,
+          "DAApprovedCashLoanAmount":790000000
+        },
+        "SULCompletion":{
+          "signInCashLoanAmount":790000000,
+          "signInNonCashLoanAmount":0,
+          "documentPost":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
+        }
+      },
+      "attachments": {
+        "identitasDebitur": [
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "identitasUsaha":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "loanReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apprasialReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankStatement":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "BICCheckingResult":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "collateralDocument":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "laporanKeungan":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "DUWWorksheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "CAWorkSheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "offeringLetter":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "notaris":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "internalMemo":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "TBO":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "perjanjianKredit":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "skmht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sbdk":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "lll":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "akta":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "others":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "tandaTerima":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankGurantee":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sul":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ]
+      },
+      "comments": [
+        {
+          "nama": "antonio",
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Hartini, Selvi Indah",
+          "comment":"Debit Fees Increase OD Done",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama": "Sudarsono, Nanang",
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Dewi Eunike Kusuma",
+          "comment":"Increase Done",
+          "date":"30/Aug/18 3:28 PM"
+        }
+      ],
+      "people":{
+        "assigne": "Junaidi, Sharleen Christie",
+        "reporter": "Junaidi, Sharleen Christie",
+        "assignToBM":"Andriani, Yunny",
+        "assignToRM":"Junaidi, Sharleen Christie",
+        "assignToLSSPreScreen":"Julianto, Raden Yusuf",
+        "assigneToDLDUW":"Hagijo, Edi",
+        "assignToDUW":"NurhasanTaufan",
+        "DUWReviewerName":"Hagijo, Edi",
+        "assignToTLCA":"Nugroho, FX Tomy",
+        "assignToCA1":"Andry, Andry",
+        "assignToCA2":"Nugroho, FX Tomy",
+        "assignToBMorDA":"Andriani, Yunny",
+        "assignToTLLSS":"Christianne, Grace"
+      },
+      "dates":{
+        "created":"06/Aug/18 2:53 PM",
+        "updated":"23/Oct/19 9:07 AM",
+        "singInDate" :"30/Aug/18",
+        "disbursementDate":"30/Aug/18",
+        "dueDateCovernoteDate":"30/Nov/18",
+        "LSSReceiveDateForCovernoteNotaris":"31/Aug/18",
+        "CDUReceiveDateForCovernoteNotaris":"31/Aug/18"
+      }
+    },
+    {
+      "id": 4,
+      "nameApplicant": "PT Berkat Unggul Pratama",
+      "code": "SME-43878",
+      "type": "Increase Application",
+      "status": "CDU PROCESS",
+      "resolution": "Unresolve",
+      "securityLevel": "Private",
+      "details": {
+        "clientInformation": {
+          "customer": "PT JADI BERKAT MULYA",
+          "CIFCustomer": "00345129",
+          "PICName": "Joko Saputra",
+          "PICPhoneNumber": "081357575777",
+          "customerType": "PT",
+          "area": "SBY 1B",
+          "SMERegion": "SME Region 3",
+          "SMERMBranch": "217 - Surabaya",
+          "RMBICode": "00316363",
+          "salesProgramCode": "Non-Program",
+          "dijaminPenuhAgunanTunai": "No",
+          "counterInterestRate": 12.25,
+          "sectorIndustry": "Wholesale and Retail Trade",
+          "facility1Type": "PRK",
+          "facility1ExistingCashLoanLimit": 6500000000,
+          "facility1IncreaseOrDecreaseCashLoanLimit": 1500000000,
+          "facilty1ExistingNonCashLoanLimit": 0,
+          "facility1IncreaseOrDecreaseNonCashLoanLimit": 0,
+          "facility1Currency": "IDR",
+          "facility1ConversionRate": 1,
+          "totalFacility1ExistingCashLoanAmount": 6500000000,
+          "totalFacility1IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility1ExistingNonCashLoanAmount": 0,
+          "totalFacilty1IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility2ConversionRate": 1,
+          "totalFacility2ExistingCashLoanAmount": 6500000000,
+          "totalFacility2IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility2ExistingNonCashLoanAmount": 0,
+          "totalFacilty2IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility3ConversionRate": 1,
+          "totalFacility3ExistingCashLoanAmount": 6500000000,
+          "totalFacility3IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility3ExistingNonCashLoanAmount": 0,
+          "totalFacilty3IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility4ConversionRate": 1,
+          "totalFacility4ExistingCashLoanAmount": 6500000000,
+          "totalFacility4IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility4ExistingNonCashLoanAmount": 0,
+          "totalFacilty4IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility5ConversionRate": 1,
+          "totalFacility5ExistingCashLoanAmount": 6500000000,
+          "totalFacility5IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility5ExistingNonCashLoanAmount": 0,
+          "totalFacilty5IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility6ConversionRate": 1,
+          "totalFacility6ExistingCashLoanAmount": 6500000000,
+          "totalFacility6IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility6ExistingNonCashLoanAmount": 0,
+          "totalFacilty6IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility7ConversionRate": 1,
+          "totalFacility7ExistingCashLoanAmount": 6500000000,
+          "totalFacility7IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility7ExistingNonCashLoanAmount": 0,
+          "totalFacilty7IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility8ConversionRate": 1,
+          "totalFacility8ExistingCashLoanAmount": 6500000000,
+          "totalFacility8IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility8ExistingNonCashLoanAmount": 0,
+          "totalFacilty8IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility9ConversionRate": 1,
+          "totalFacility9ExistingCashLoanAmount": 6500000000,
+          "totalFacility9IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility9ExistingNonCashLoanAmount": 0,
+          "totalFacilty9IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "facility10ConversionRate": 1,
+          "totalFacility10ExistingCashLoanAmount": 6500000000,
+          "totalFacility10IncreaseOrDecreaseCashLoanAmount": 1500000000,
+          "totalFacility10ExistingNonCashLoanAmount": 0,
+          "totalFacilty10IncreaseOrDecreaseNonCashLoanAmount": 0,
+          "RMTotalExistingCashLoanAmount": 6500000000,
+          "RMTotalIncreaseDecreaseCashLoanAmount": 150000000,
+          "RMTotalExistingNonCashLoanAmount": 0,
+          "RMTotalIncreaseDecreaseNonCashLoanAmount": 0,
+          "RMTotalLimitCashLoanAmount": 0
+        },
+
+        "documentList" :{
+          "dataDebiturPerorangan":[
+            {
+              "nama":"Fotokopi KTP/Paspor Debitur",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi KTP/Paspor pasangan (suami istri)",
+              "check":false
+            },
+            {
+              "nama":"Fotokopi Akta Nikah",
+              "check":false
+            }
+          ],
+          "dataDebiturPerushaan":[
+            {
+              "nama":"Fotokopi KTP/KITAS/Pssport Pemegang Saham",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Direksi",
+              "check":true
+            },
+            {
+              "nama":"Fotokopi KTP/KITAS/Passport Dewan Komisaris",
+              "check":false
+            }
+          ]
+        },
+        "preScreen":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Pre-Screen Checklist",
+              "check":false
+            }
+          ]
+        },
+        "apprasial":{
+          "apprasialRequestChecklist":[
+            {
+              "nama":"Proof of payment",
+              "check":false
+            },
+            {
+              "nama":"Proof of certificate",
+              "check":false
+            }
+          ]
+        },
+        "RM":{
+          "reworkFromDUWToRM": 1,
+          "reworkFromLSS":1,
+          "reworkReasonIndividualAndInformationFromDUWtoRM":"#COLLNA_MOHON Melampirkan LPA Lengkap.\n#BUSSMNA_Mohon dilengkapi:\n- stample PT pada SME Aplikasi dan Lap Keuangan"
+        },
+        "DUW":{
+          "codeId":"COE-1457225",
+          "systemDecision":"refer",
+          "DUWWorksheet":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
+        },
+        "CA":{
+          "CA1Recomendation":"Approve",
+          "CA1RecomendationCashLoanAmountExisting":650000000,
+          "CA1RecomendationCashLoanAmountLimit":14000000000,
+          "CA1RecomendationCashLoanAmount":790000000
+        },
+        "DA":{
+          "DADecision":"Approve",
+          "DAApprovedCashLoanAmountExisting":650000000,
+          "DAApprovedCashLoanAmountLimit":14000000000,
+          "DAApprovedCashLoanAmount":790000000
+        },
+        "SULCompletion":{
+          "signInCashLoanAmount":790000000,
+          "signInNonCashLoanAmount":0,
+          "documentPost":[
+            {
+              "name":"DUW Summary Report",
+              "check":true
+            },
+            {
+              "name":"CAT ( Collateral Acceptence Test)",
+              "check":true
+            }
+          ]
+        }
+      },
+      "attachments": {
+        "identitasDebitur": [
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "identitasUsaha":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "loanReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apprasialReport":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankStatement":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "BICCheckingResult":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "collateralDocument":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "laporanKeungan":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "DUWWorksheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "CAWorkSheet":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "offeringLetter":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "notaris":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "internalMemo":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "TBO":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "perjanjianKredit":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "skmht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "apht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sbdk":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "lll":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "akta":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "others":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sht":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "tandaTerima":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "bankGurantee":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ],
+        "sul":[
+          {
+            "nama": "resume_satu.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_satu.pdf",
+            "tanggal": "280301"
+          },
+          {
+            "nama": "resume_dua.pdf",
+            "url": "http://localhost:3009/folder/file?=resume_dua.pdf",
+            "tanggal": "280301"
+          }
+        ]
+      },
+      "comments": [
+        {
+          "nama": "antonio",
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Hartini, Selvi Indah",
+          "comment":"Debit Fees Increase OD Done",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama": "Sudarsono, Nanang",
+          "comment": "Good",
+          "date":"30/Aug/18 3:28 PM"
+        },
+        {
+          "nama":"Dewi Eunike Kusuma",
+          "comment":"Increase Done",
+          "date":"30/Aug/18 3:28 PM"
+        }
+      ],
+      "people":{
+        "assigne": "Junaidi, Sharleen Christie",
+        "reporter": "Junaidi, Sharleen Christie",
+        "assignToBM":"Andriani, Yunny",
+        "assignToRM":"Junaidi, Sharleen Christie",
+        "assignToLSSPreScreen":"Julianto, Raden Yusuf",
+        "assigneToDLDUW":"Hagijo, Edi",
+        "assignToDUW":"NurhasanTaufan",
+        "DUWReviewerName":"Hagijo, Edi",
+        "assignToTLCA":"Nugroho, FX Tomy",
+        "assignToCA1":"Andry, Andry",
+        "assignToCA2":"Nugroho, FX Tomy",
+        "assignToBMorDA":"Andriani, Yunny",
+        "assignToTLLSS":"Christianne, Grace"
+      },
+      "dates":{
+        "created":"06/Aug/18 2:53 PM",
+        "updated":"23/Oct/19 9:07 AM",
+        "singInDate" :"30/Aug/18",
+        "disbursementDate":"30/Aug/18",
+        "dueDateCovernoteDate":"30/Nov/18",
+        "LSSReceiveDateForCovernoteNotaris":"31/Aug/18",
+        "CDUReceiveDateForCovernoteNotaris":"31/Aug/18"
+      }
     }
   ]

@@ -5,6 +5,7 @@ import { ApplicantService } from './service/applicant.service';
 import { ApplicantController } from './controller/applicant.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Applicant } from './entity/applicant.entity';
+import { FilesController } from './controller/files.controller';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -20,7 +21,7 @@ import { Applicant } from './entity/applicant.entity';
     }),
     TypeOrmModule.forFeature([Applicant])
   ],
-  controllers: [AppController, ApplicantController],
+  controllers: [AppController, ApplicantController,FilesController],
   providers: [AppService, ApplicantService],
 }
 )
