@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as JSZip from 'jszip';
 import * as archiver from 'archiver';
+const archiver = require('archiver');
 
 @Controller('/api/file')
 export class FilesController {
@@ -26,28 +27,30 @@ export class FilesController {
   @Get('/bulkdownload')
   async bulkDownload(@Query() query:{ filename: string}, @Res() response: Response) {
     const { filename } = query;
-    const filenames = Array.isArray(filename) ? filename : [filename];
+    const filenames = Array.isArray(filename) ? filename : [filename]; // Ensure it's an array
 
     const zip = new JSZip();
+   // Inisialisasi archiver
+const archive = archiver('zip', {
+  zlib: { level: 9 } // Tingkat kompresi
+});
 
-    for (const filename of filenames) {
-      const filePath = path.resolve(__dirname, '..', '../src/folder/file', filename);
-      const fileData = fs.readFileSync(filePath);
-      zip.file(filename, fileData);
-    }
 
-    response.set({
-      'Content-Type': 'application/zip',
-      'Content-Disposition': `attachment; filename=files.zip`,
-    });
+// Loop melalui setiap nama file dan masukkan ke dalam entries
+filenames.forEach(filename => {
+  const filePath = path.resolve(__dirname, '..', '../src/folder/file', filename);
+  const fileStream = fs.createReadStream(filePath);
+  
+  // Masukkan file ke dalam entries
+  archive.append(fileStream, { name: filename });
+});
 
-    const archive = archiver('zip');
-    archive.pipe(response);
-    console.log(archive.pipe(response));
-    zip.generateNodeStream({ streamFiles: true })
-      .pipe(archive);
+// Selesai menambahkan file, panggil finalize untuk menyelesaikan proses zip
+archive.finalize();
 
-    archive.finalize();
+// Pipe hasil zip ke response atau ke file
+archive.pipe(response); // Untuk mengirim zip ke response HTTP
+archive.pipe(fs.createWriteStream('output.zip')); // Untuk menyimpan zip ke file
   }
 
 }

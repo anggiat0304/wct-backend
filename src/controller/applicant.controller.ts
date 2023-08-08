@@ -1,14 +1,10 @@
 import { Controller, Get, Inject ,Res,HttpStatus, Param} from '@nestjs/common';
-import { ApplicantService } from '../service/applicant.service';
 import { Applicant } from 'src/entity/applicant.entity';
 import { Response } from 'express';
 import * as fs from 'fs';
 import * as path from 'path';
 @Controller('/api/applicant')
 export class ApplicantController {
-
-  @Inject()
-  private readonly applicantService: ApplicantService
 
   @Get()
   async findAll(@Res() res: Response): Promise<void> {
